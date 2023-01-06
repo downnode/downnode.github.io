@@ -1,0 +1,23 @@
+/* 全局スタイル設定 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background: #00c2cb;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+
+/* Headerの設定 */
+
+/* Mainの設定 */
+
+/* Footerの設定 */

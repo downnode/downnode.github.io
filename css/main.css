@@ -1,0 +1,222 @@
+/* Titleの設定 */
+
+.parallax_title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parallax_title #logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.parallax_title img {
+    position: absolute;
+    pointer-events: none;
+}
+
+.parallax_title .img_half {
+    width: 50%;
+}
+.parallax_title .img_third {
+    width: 33%;
+}
+
+.parallax_title .img_left {
+    left:0;
+}
+.parallax_title .img_right {
+    right:0;
+}
+.parallax_title .img_top {
+    top:0;
+}
+.parallax_title .img_bottom {
+    bottom:0;
+}
+.parallax_title .img_mid {
+    top:50%;
+    transform: translate(0, -50%);
+}
+
+/* sloganの設定 */
+.content_slogan {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content_slogan img {
+    width: 100%;
+}
+
+
+
+
+
+/* slideの設定 */
+.slideshow {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 1;
+    font-size: 100px;
+    font-family: 'Staatliches', cursive;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .active-slide{
+    z-index: 10;
+    display: flex;
+    animation: slideIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+  }
+  .prev-slide{
+    display: flex;
+  }
+  .dot-cont{
+    position: absolute;
+    z-index: 11;
+    bottom: 5px;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+  }
+  .dot{
+    margin: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+  }
+  .dot:hover{
+    cursor: pointer;
+    background: white;
+  }
+  .active-dot{ 
+    background: rgba(255,255,255,0.9);
+    animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+  }
+
+/* skill showの設定 */
+h1 {
+    padding: 60px 0;
+    color: #00c2cb;
+    font-size: 45px;
+    text-align: center;
+}
+ 
+.skill-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-container .image-slider {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.image-slider img {
+    height: 300px;
+    object-fit: cover;
+    width: 300px;
+}
+.image-slider img:first-child {
+    margin-left: 0;
+}
+
+/* videosの設定 */
+.video-container {
+    width: 80%;
+    margin: 80px auto;
+}
+.video-container h1 {
+    padding: 60px 0;
+    color: #00c2cb;
+    font-size: 45px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.col {
+    padding: 50px;
+    flex-basis: 50%;
+    min-width: 250px;
+}
+.feature_img  {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.video_cover {
+    width: 100%;
+}
+
+.play_btn {
+    width: 100px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.video-player {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+video:focus {
+    outline: none;
+}
+
+.close_btn {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: 30px;
+    cursor:pointer;
+}
+
