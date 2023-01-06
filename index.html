@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ダウンノード--DownNoad</title>
+
+  <!-- CSS族 -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/header.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <!-- header -->
+  <header id="header">
+    <img class="logo" src="images/logo.png"></img>
+    <ul class="navigation">
+      <li><a href="#" class="active">Home</a></li>
+      <!-- <li><a href="#">About Us</a></li>
+      <li><a href="#">Download</a></li> -->
+    </ul>
+  </header>
+
+  <!-- main -->
+  <main>
+  <!-- title -->
+  <section class="parallax_title" id="sec_1">
+    <img src="images/logo.gif" id="logo">
+    <img src="images/t_01.png" id="hexagon1" class="img_third img_left img_top">
+    <img src="images/t_02.png" id="hexagon2" class="img_third img_right img_bottom">
+    <img src="images/t_03.png" id="point1" class="img_half img_left img_top">
+    <img src="images/t_04.png" id="point2" class="img_half img_right img_bottom"">
+    <img src="images/t_05.png" id="leaf1" class="img_half img_left img_bottom">
+    <img src="images/t_06.png" id="leaf2" class="img_half img_right img_top">
+  </section>
+  <!-- contents -->
+  <!-- slogan -->
+  <section class="content_slogan" id="sec_2">
+    <div class="container">
+      <img src="images/slogan.jpg" alt="">
+    </div>
+  </section>
+  <!-- slide -->
+  <section class="content_slide" id="sec_3">
+    <div class="slideshow">
+      <div class="slide"><img src="images/slide_01.jpg" alt=""></div>
+      <div class="slide"><img src="images/slide_02.jpg" alt=""></div>
+      <div class="slide"><img src="images/slide_03.jpg" alt=""></div>
+      
+      <div class="dot-cont">
+        <div class="dot" onclick="clickChangeSlide(0)"></div>
+        <div class="dot" onclick="clickChangeSlide(1)"></div>
+        <div class="dot" onclick="clickChangeSlide(2)"></div>
+      </div>
+    </div>
+  </section>
+  <!-- skill show & video -->
+  <!-- skill show -->
+  <section class="content_skill_show" id="sec_4" style="background-color: #fff;">
+    <h1>スキル展示</h1>
+    <div class="skill-container">
+      <div class="image-slider">
+        <img src="images/1.png" alt="">
+        <img src="images/2.png" alt="">
+        <img src="images/3.png" alt="">
+        <img src="images/4.png" alt="">
+        <img src="images/5.png" alt="">
+        <img src="images/6.png" alt="">
+        <img src="images/7.png" alt="">
+        <img src="images/8.png" alt="">
+        <img src="images/9.png" alt="">
+        <img src="images/10.png" alt="">
+        <img src="images/11.png" alt="">
+      </div>
+    </div>
+    <h1>動画展示</h1>
+    <div class="video-container">
+      <div class="row">
+        <div class="col">
+          <div class="feature-img">
+            <video src="videos/video_short.mp4" controls width="100%">
+            <!-- <img src="videos/play_icon.png" class="play_btn" alt=""> -->
+          </div>
+        </div>
+        <div class="col">
+          <div class="feature-img">
+            <video src="videos/video_long.mp4" controls width="100%">
+            <!-- <img src="videos/play_icon.png" class="play_btn" alt=""> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-left col-md-4 col-sm-6">
+        <p class="about">
+            <span> About Us</span> 私たちの考えたMAKE NEWSはダウン脳ードです。
+            ダウン脳ードはDNAコンピューターを用いて、知識、技術、医療の面で人間の身体を進化させるアプリです
+            現在、dnaコンピュータでは人間の身体の中で簡単な四則演算が出来ています。
+            将来的には人間の体をプログラミングできるようになっており、例えば計算が早くなるなど想像できると思います。
+        </p>
+        <div class="icons">
+            <a href="#"><i class="fa-facebook"></i></a>
+            <a href="#"><i class="fa-twitter"></i></a>
+            <a href="#"><i class="fa-linkedin"></i></a>
+            <a href="#"><i class="fa-google"></i></a>
+            <a href="#"><i class="fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="footer-center col-md-4 col-sm-6">
+<div>
+    <i class="fa-map-marked"></i>
+    <p><span> Street name and number</span> Tokyo, Japan</p>
+</div>
+    <div>
+        <i class="fa fa-phone"></i>
+        <p> (+81) 03 2222 3333</p>
+    </div>
+    <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#"> office@company.com</a></p>
+    </div>
+    </div>
+    <div class="footer-right col-md-4 col-sm-6">
+        <img src="images/logo.png" style="width: 80%;">
+    </div>
+  </div>
+  <!-- JS族 -->
+  <script src="js/jquery-3.6.2.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
