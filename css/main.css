@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* width: 100vh; */
 }
 
 .parallax_title #logo {
@@ -86,7 +87,7 @@
 
   .slide img{
     width: 70%;
-    height: 70%;
+    /* height: 70%; */
     object-fit: cover;
   }
 
@@ -148,9 +149,9 @@ h1 {
 }
 
 .image-slider img {
-    height: 300px;
+    height: 20vh;
     object-fit: cover;
-    width: 300px;
+    /* width: 20vh; */
 }
 .image-slider img:first-child {
     margin-left: 0;
@@ -175,8 +176,8 @@ h1 {
 }
 .col {
     padding: 50px;
-    flex-basis: 50%;
-    min-width: 250px;
+    /* flex-basis: 50%; */
+    width: 50%;
 }
 .feature_img  {
     width: 100%;
@@ -201,7 +202,7 @@ h1 {
 }
 
 .video-player {
-    width: 80%;
+    width: 100%;
     position: relative;
     left: 50%;
     top: 30%;
@@ -220,3 +221,30 @@ video:focus {
     cursor:pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .parallax_title {
+        margin-top: 80px;
+        height: 35vh;
+    }
+    .content_slogan {
+        height: 50vh;
+    }
+    .slideshow {
+        height: 50vh;
+    }
+    .slide {
+        height: 50vh;
+    }
+    .slide img {
+        width: 100%;
+    }
+    .skill-container img{
+        display: none;
+    }
+    .skill_title {
+        display: none;
+    }
+    }
+    .col {
+        width: 100%;
+    }
