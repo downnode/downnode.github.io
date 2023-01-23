@@ -1,0 +1,45 @@
+/* 全局スタイル設定 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background: #fff;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+/* Titleの設定 */
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title img{
+    width: 30%;
+}
+
+
+
+/* Contentsの設定 */
+.container {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img{
+    width: 70%;
+}
